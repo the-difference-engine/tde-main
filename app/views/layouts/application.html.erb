@@ -4,7 +4,6 @@
   <title>Anyone Can Have A Website</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
     <body data-spy="scroll" data-target="#navigation" data-offset="80">
@@ -21,6 +20,7 @@
         <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
         <!--back to top end-->
 
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
         <script type="text/javascript">
