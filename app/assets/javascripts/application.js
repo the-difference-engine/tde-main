@@ -13,9 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require theme/bootstrap
 //= require theme/bootstrap-hover-dropdown.min
 //= require theme/contact_me
-//= require theme/custom
 //= require theme/easypiechart
 //= require theme/isotope-custom
 //= require theme/jqBootstrapValidation
@@ -27,14 +27,15 @@
 //= require theme/jquery.imagesloaded.min
 //= require theme/jquery.isotope.min
 //= require theme/jquery.mb.YTPlayer.min
-//= require theme/jquery.min
 //= require theme/jquery.mixitup.min
 //= require theme/jquery.stellar.min
 //= require theme/jquery.sticky
 //= require theme/moderniz.min
 //= require theme/owl.carousel.min
 //= require theme/pace.min
+//= require theme/jquery.themepunch.revolution.js
 //= require theme/revolution-custom
 //= require theme/waypoints.min
 //= require theme/wow.min
+//= require theme/custom
 //= require_tree .
