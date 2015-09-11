@@ -1,0 +1,9 @@
+body, p {
+  color: #031908;
+}
+
+a.outside_link {
+  color: #9eca45;
+  font-weight: 900;
+  font-size: 14px;
+}
