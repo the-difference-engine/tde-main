@@ -12,7 +12,8 @@
             <div class="row">
                 <div class="col-md-8">
                     <h4>Get in touch</h4>
-                    <form name="sentMessage" id="contactForm" method="post" novalidate>
+                    <!-- <form name="sentMessage" id="contactForm" method="post" novalidate> -->
+                    <%= form_tag "/contacts", id: "contactForm", name: "sentMessage" do %>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="row control-group">
@@ -49,7 +50,8 @@
                                 <button type="submit" class="btn btn-theme-color btn-lg">Send Message</button>
                             </div>
                         </div>
-                    </form>
+                    <% end %>
+                    <!-- </form> -->
                     <!--contact form-->
                 </div>
                 <div class="col-md-4">
