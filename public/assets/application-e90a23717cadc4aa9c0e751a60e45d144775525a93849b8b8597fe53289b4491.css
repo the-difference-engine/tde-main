@@ -10448,7 +10448,7 @@ a:active,
 a:hover,
 a:focus {
   outline: 0;
-  color: #9eca45;
+  color: #a4a4e8;
   text-decoration: none; }
 
 .padding-80 {
@@ -10482,7 +10482,7 @@ a:focus {
   z-index: 1; }
 
 #home.home-video {
-  background-color: #9eca45;
+  background-color: #a4a4e8;
   background-image: none; }
 
 .parallax-overlay {
@@ -10564,15 +10564,15 @@ bootstrap navbar overrides
   font-size: 13px; }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #9eca45 !important;
+  color: #a4a4e8 !important;
   background-color: transparent; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #9eca45 !important;
+  color: #a4a4e8 !important;
   background-color: transparent; }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #9eca45 !important;
+  color: #a4a4e8 !important;
   background-color: transparent; }
 
 .navbar-default .navbar-brand {
@@ -10613,7 +10613,7 @@ bootstrap navbar overrides
   color: #fff; }
 
 .btn-theme-color {
-  background-color: #9eca45;
+  background-color: #a4a4e8;
   color: #fff; }
 
 .btn-theme-color:hover, .btn-theme-color:focus {
@@ -10689,7 +10689,7 @@ blog section css here
   text-transform: uppercase; }
 
 .blog-item-head h3 a:hover {
-  color: #9eca45; }
+  color: #a4a4e8; }
 
 .blog-item-post-info {
   padding: 5px 0px;
@@ -10707,7 +10707,7 @@ blog section css here
   color: #999; }
 
 .blog-item-post-info span a:hover {
-  color: #9eca45; }
+  color: #a4a4e8; }
 
 .blog-more-desc {
   margin: 30px 0;
@@ -10755,7 +10755,7 @@ blog section css here
   padding-top: 5px; }
 
 .more-link a {
-  color: #9eca45;
+  color: #a4a4e8;
   font-weight: 600; }
 
 /*********************
@@ -10811,7 +10811,7 @@ About section
   float: left; }
 
 .about-box-icon i {
-  color: #9eca45;
+  color: #a4a4e8;
   font-size: 44px; }
 
 .about-box-text {
@@ -10831,7 +10831,7 @@ About section
   margin-bottom: 30px; }
 
 .about-more-info p:first-letter {
-  color: #9eca45;
+  color: #a4a4e8;
   font-weight: 400;
   font-size: 20px; }
 
@@ -10860,7 +10860,7 @@ h3.heading-progress {
 
 .progress-bar {
   line-height: 10px;
-  background: #9eca45;
+  background: #a4a4e8;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -ms-box-shadow: none;
@@ -10868,7 +10868,7 @@ h3.heading-progress {
 
 /*purchase now section*/
 .purchase-now {
-  background-image: url("/assets/theme/bg-1-1fb8a85f69016cfac6737b8ca8d0c354624ebac0d1c3a87e97d44f249db36005.jpg");
+  background-image: url("/assets/theme/rsz_acltc_selects-46-5956e3cedf1b7ba86c570383907cab45cfa4a72e0e4de58210d18449ac2bb85d.jpg");
   width: 100%;
   padding: 120px 0;
   background-size: cover;
@@ -11050,7 +11050,7 @@ input[type="color"]:focus,
   margin-bottom: 5px; }
 
 .popu-post-item h5 a {
-  color: #9eca45; }
+  color: #a4a4e8; }
 
 .popu-post-item span {
   display: block;
@@ -11059,7 +11059,7 @@ input[type="color"]:focus,
   border-bottom: 1px solid #f7f7f7; }
 
 .popu-post-item span a {
-  color: #9eca45; }
+  color: #a4a4e8; }
 
 .cat-list {
   padding: 0;
@@ -11083,7 +11083,7 @@ input[type="color"]:focus,
 bootstrap overrides badge and pagination
 ****************************************/
 .badge {
-  background-color: #9eca45;
+  background-color: #a4a4e8;
   font-weight: 400; }
 
 .pagination {
@@ -11096,7 +11096,7 @@ bootstrap overrides badge and pagination
   line-height: 1.42857143;
   text-decoration: none;
   color: #fff;
-  background-color: #9eca45;
+  background-color: #a4a4e8;
   border: 1px solid #077aaa;
   margin-left: -1px; }
 
@@ -11155,11 +11155,11 @@ our work section
   text-transform: uppercase; }
 
 .filter li a.active {
-  background-color: #9eca45;
+  background-color: #a4a4e8;
   color: #fff; }
 
 .filter li a:hover {
-  background-color: #9eca45;
+  background-color: #a4a4e8;
   color: #fff; }
 
 /***image hover****/
@@ -11244,7 +11244,7 @@ our work section
 
 .person-desc em {
   font-weight: 600;
-  color: #9eca45;
+  color: #a4a4e8;
   font-style: normal;
   font-size: 12px; }
 
@@ -11254,12 +11254,12 @@ our work section
   line-height: 2; }
 
 .tooltip.top .tooltip-inner {
-  background-color: #9eca45;
+  background-color: #a4a4e8;
   padding: 6px 12px;
   font-size: 13px; }
 
 .tooltip.top .tooltip-arrow {
-  border-top-color: #9eca45; }
+  border-top-color: #a4a4e8; }
 
 /**********************contact section
 ***************************************/
@@ -11280,7 +11280,7 @@ our work section
 .contact-col i {
   font-size: 45px;
   margin-bottom: 15px;
-  color: #9eca45; }
+  color: #a4a4e8; }
 
 .contact-col p {
   font-weight: 300;
@@ -11323,9 +11323,9 @@ our work section
   border: 1px solid #eee; }
 
 .price-popular .pricing-wrapper-inner h2 {
-  background-color: #9eca45;
+  background-color: #a4a4e8;
   color: #fff;
-  border-color: #9eca45; }
+  border-color: #a4a4e8; }
 
 .pricing-wrapper-inner {
   text-align: center; }
@@ -11338,7 +11338,7 @@ our work section
 .pricing-wrapper-inner h2 {
   margin: 0;
   padding: 25px;
-  color: #9eca45;
+  color: #a4a4e8;
   font-size: 4em;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee; }
@@ -11462,9 +11462,9 @@ iframe {
   position: relative; }
 
 .services-section-2 {
-  background-image: url("/assets/theme/bg-3-fd245eb9a424c6cdf5fc1c945aa429819ac568e0cacca177e6730bc6b484876e.jpg");
+  background-image: url("/assets/theme/rsz_acltc_selects-45-78edcfe5557391ce91b929e8b77f1c2702b14a39531f443a37b4f821d402d104.jpg");
   padding: 90px 0;
-  background-color: #9eca45;
+  background-color: #a4a4e8;
   background-position: center top;
   background-size: cover;
   background-attachment: fixed; }
@@ -11580,7 +11580,7 @@ iframe {
   padding-top: 25px;
   line-height: 20px;
   font-weight: 400;
-  color: #9eca45; }
+  color: #a4a4e8; }
 
 .countdown_section {
   display: inline-block;
@@ -11588,7 +11588,7 @@ iframe {
   height: 120px;
   padding-top: 13px;
   margin: 10px;
-  color: #9eca45;
+  color: #a4a4e8;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
@@ -11677,7 +11677,7 @@ label span {
   right: 0px;
   z-index: 999999;
   display: none;
-  background: #9eca45;
+  background: #a4a4e8;
   opacity: 0.5;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -11706,7 +11706,7 @@ label span {
 
 .dropdown-menu > li > a:hover {
   background-color: transparent;
-  color: #9eca45; }
+  color: #a4a4e8; }
 
 .Ken-burns-heading {
   font-weight: 600;
@@ -17420,12 +17420,13 @@ zoom: 1;
 .revicon-popup:before { content: '\e828'} /* '' */
 body, p {
   color: #031908;
+  font-size: 16px;
 }
 
 a.outside_link {
-  color: #9eca45;
+  color: #a4a4e8;
   font-weight: 900;
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
