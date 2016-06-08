@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="portfolio-box iso-call work-col-4">
                     <div class="project-post photography branding">
-                        <a href="single-work.html">
+                        <%= link_to(pages_project_path) do %>
                                 <div class="image-wrapper">
                                     <%= image_tag "women-who-code.png", class:"img-responsive" %>
                                     <div class="image-overlay">
@@ -28,7 +28,7 @@
                                         </p>
                                     </div><!--.image-overlay-->
                                 </div><!--.image-wrapper-->
-                            </a>
+                            <% end %>
                             <div class="work-sesc">
                                 <p>
                                     Women Who Code
