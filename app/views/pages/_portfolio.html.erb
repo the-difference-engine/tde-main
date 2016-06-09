@@ -18,8 +18,9 @@
             </ul> -->
             <div class="row">
                 <div class="portfolio-box iso-call work-col-4">
+                  <% @projects.each do |project| %>
                     <div class="project-post photography branding">
-                        <%= link_to(pages_project_path) do %>
+                        <a href="portfolio_detail.html">
                                 <div class="image-wrapper">
                                     <%= image_tag "women-who-code.png", class:"img-responsive" %>
                                     <div class="image-overlay">
@@ -28,70 +29,16 @@
                                         </p>
                                     </div><!--.image-overlay-->
                                 </div><!--.image-wrapper-->
-                            <% end %>
-                            <div class="work-sesc">
-                                <p>
-                                    Women Who Code
-                                </p>
-                            </div><!--.work-desc-->
-                    </div><!--project post-->
-                    <div class="project-post illustration web-design">
-                       <a href="single-work.html">
-                                <div class="image-wrapper">
-                                    <%= image_tag "sharing-wisdom.png", class:"img-responsive" %>
-                                    <div class="image-overlay">
-                                        <p>
-                                            View Detail
-                                        </p>
-                                    </div><!--.image-overlay-->
-                                </div><!--.image-wrapper-->
                             </a>
                             <div class="work-sesc">
                                 <p>
-                                    Sharing Wisdom
+                                    <%= project.title %>
                                 </p>
                             </div><!--.work-desc-->
                     </div><!--project post-->
-                    <div class="project-post photography web-design">
-                       <a href="single-work.html">
-                                <div class="image-wrapper">
-                                    <%= image_tag "john-marshall.png", class:"img-responsive" %>
-                                    <div class="image-overlay">
-                                        <p>
-                                            View Detail
-                                        </p>
-                                    </div><!--.image-overlay-->
-                                </div><!--.image-wrapper-->
-                            </a>
-                            <div class="work-sesc">
-                                <p>
-                                    John Marshall Law School
-                                </p>
-                            </div><!--.work-desc-->
-                    </div><!--project post-->
-
-                    <div class="project-post branding">
-                        <a href="single-work.html">
-                                <div class="image-wrapper">
-                                    <%= image_tag "svp.png", class:"img-responsive" %>
-                                    <div class="image-overlay">
-                                        <p>
-                                            View Detail
-                                        </p>
-                                    </div><!--.image-overlay-->
-                                </div><!--.image-wrapper-->
-                            </a>
-                            <div class="work-sesc">
-                                <p>
-                                    Social Venture Partners
-                                </p>
-                            </div><!--.work-desc-->
-                    </div><!--project post-->
-                </div>
-            </div>
-        </div><!--container-->
-
-
+                    <% end %>
+                  </div>
+              </div><!--container-->
     </div><!--work section 1-->
     <!--testimonials-->
        <div class="testi parallax " data-stellar-background-ratio="0.5">
