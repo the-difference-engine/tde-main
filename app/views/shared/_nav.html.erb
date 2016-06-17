@@ -18,6 +18,9 @@
                     <li><a href="#services">How It Works</a></li>
                     <li><a href="#work">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <% if admin_signed_in? %>
+                      <li><%= link_to('Log Out', destroy_admin_session_path, :method => :delete) %></li>
+                    <% end %>
                     <!-- <li><a href="#">Blog</a></li> -->
 
 

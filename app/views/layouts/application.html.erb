@@ -11,9 +11,10 @@
     <body data-spy="scroll" data-target="#navigation" data-offset="80">
 
         <%= yield :top_video %>
-        
+
         <%= render 'shared/nav' %>
-        
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
         <%= yield %>
 
         <%= render 'shared/footer' %>

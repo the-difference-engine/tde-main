@@ -29,6 +29,8 @@ gem 'aws-sdk', '~> 2'
 gem "paperclip", "~> 5.0.0.beta1"
 # Figaro for storing sensitive info
 gem "figaro"
+# Devise for Authentication
+gem 'devise'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

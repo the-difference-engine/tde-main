@@ -20,7 +20,7 @@
                 <div class="portfolio-box iso-call work-col-4">
                   <% @projects.each do |project| %>
                     <div class="project-post photography branding">
-                        <a href="portfolio_detail.html">
+                        <%= link_to project_path(project) do %>
                                 <div class="image-wrapper">
                                     <%= image_tag "women-who-code.png", class:"img-responsive" %>
                                     <div class="image-overlay">
@@ -29,7 +29,7 @@
                                         </p>
                                     </div><!--.image-overlay-->
                                 </div><!--.image-wrapper-->
-                            </a>
+                            <% end %>
                             <div class="work-sesc">
                                 <p>
                                     <%= project.title %>
