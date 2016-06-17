@@ -30,7 +30,7 @@
 //= require theme/jquery.imagesloaded.min
 //= require theme/jquery.counterup.min
 //= require theme/jquery.countdown
-//= require theme/contact_me
+
 //= require theme/jqBootstrapValidation
 //= require theme/custom
 //= require theme/jquery.mixitup.min
@@ -40,3 +40,8 @@
 //= require theme/isotope-custom
 //= require theme/pace.min
 //= require_tree .
+
+
+
+
+

@@ -1,6 +1,19 @@
 class ContactsController < ApplicationController
-  def create
-    ContactsMailer.contact_us(params[:name], params[:email], params[:message]).deliver_now
-    render json: {message: "Success!"}
+  def new
+    @contact = Contact.new
   end
+
+  def create
+    @contact = Contact.new(contact_params)
+    if @contact.save
+      ContactsMailer.contact_us(@contact).deliver_now
+      redirect_to root_path(anchor: 'contact-us-redirect')
+      flash[:notice] = "Your message has been sent!"
+    end
+  end
+
+  private
+    def contact_params
+      params.require(:contact).permit(:name, :email, :message)
+    end
 end
