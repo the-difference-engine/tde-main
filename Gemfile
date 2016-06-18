@@ -23,10 +23,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-# AWS S3 for storing uploads
-gem 'aws-sdk', '~> 2'
-# Paperclip for uploads
-gem "paperclip", "~> 5.0.0.beta1"
+#AWS SDK
+gem 'aws-sdk', '< 2.0'
+#Paperclip
+gem "paperclip", "~> 4.2"
 # Figaro for storing sensitive info
 gem "figaro"
 # Devise for Authentication
