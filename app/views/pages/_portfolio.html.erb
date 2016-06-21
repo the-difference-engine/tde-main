@@ -20,24 +20,24 @@
                 <div class="portfolio-box iso-call work-col-4">
                   <% @projects.each do |project| %>
                     <div class="project-post photography branding">
-                        <%= link_to project_path(project) do %>
-                                <div class="image-wrapper">
-                                    <%= image_tag "women-who-code.png", class:"img-responsive" %>
-                                    <div class="image-overlay">
-                                        <p>
-                                            View Detail
-                                        </p>
-                                    </div><!--.image-overlay-->
-                                </div><!--.image-wrapper-->
-                            <% end %>
-                            <div class="work-sesc">
-                                <p>
-                                    <%= project.title %>
-                                </p>
-                            </div><!--.work-desc-->
+                      <%= link_to project_path(project), :"data-no-turbolink" => true do %>
+                          <div class="image-wrapper">
+                            <%= image_tag project.portfolio_image.url(:medium), class:"img-responsive" %>
+                            <div class="image-overlay">
+                              <p>
+                                  View Detail
+                              </p>
+                            </div><!--.image-overlay-->
+                          </div><!--.image-wrapper-->
+                        <% end %>
+                        <div class="work-sesc">
+                            <p>
+                                <%= project.title %>
+                            </p>
+                        </div><!--.work-desc-->
                     </div><!--project post-->
-                    <% end %>
-                  </div>
+                  <% end %>
+                </div>
               </div><!--container-->
     </div><!--work section 1-->
     <!--testimonials-->

@@ -7,6 +7,18 @@
         <%= f.file_field :portfolio_image %>
       </div>
       <div class="form-group">
+        <%= f.label "Upload Slider Image One", class: "control-label" %>
+        <%= f.file_field :image_one %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Upload Slider Image Two", class: "control-label" %>
+        <%= f.file_field :image_two %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Upload Slider Image Three", class: "control-label" %>
+        <%= f.file_field :image_three %>
+      </div>
+      <div class="form-group">
         <%= f.label :title, class: "control-label" %>
         <%= f.text_field :title, class: "form-control" %>
       </div>

@@ -30,7 +30,6 @@
 //= require theme/jquery.imagesloaded.min
 //= require theme/jquery.counterup.min
 //= require theme/jquery.countdown
-
 //= require theme/jqBootstrapValidation
 //= require theme/custom
 //= require theme/jquery.mixitup.min

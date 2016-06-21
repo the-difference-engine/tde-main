@@ -1,4 +1,29 @@
-<h1>Project Show</h1>
-<p>
-  <%= image_tag @project.portfolio_image.url(:medium) %>
-</p>
+<section id="page-head-bg">
+  <div class="container">
+    <h1><%= @project.title %></h1>
+  </div>
+</section><!--page-head bg end-->
+<section id="work-single" class="padding-80">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 margin-btm-40">
+        <div class="portfolio-slide">
+          <ul class="slides">
+            <li><%= image_tag @project.image_one.url(:medium), class:"img-responsive" %></li>
+            <li><%= image_tag @project.image_two.url(:medium), class:"img-responsive" %></li>
+            <li><%= image_tag @project.image_three.url(:medium), class:"img-responsive" %></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+        <h3>What We Did</h3>
+        <p><%= @project.description %></p>
+      </div>
+    </div>
+  </div><!--work detail container-->
+</section>
+<!--back to top-->
+<a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+<!--back to top end-->
+
