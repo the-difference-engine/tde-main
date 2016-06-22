@@ -46,6 +46,9 @@ textarea#project_description {
   border: 2px solid #fafafa;
 }
 
-#what-we-do, #how-it-works, #portfolio-anchor, #contact-anchor {
-  padding-top: 80px;
+:target:before {
+  content: "";
+  display: block;
+  height: 90px;
+  margin: -90px 0 0;
 }
