@@ -86,5 +86,14 @@ Rails.application.configure do
     user_name: ENV["MAILER_USERNAME"],
     password: ENV["MAILER_PASSWORD"]
   }
-  
+
+  config.paperclip_defaults = {
+    storage: :s3,
+    s3_credentials: {
+    bucket: ENV['AWS_S3_BUCKET'],
+    access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+    secret_access_key: ENV['AWS_SECRET_ACCESS_KEY']
+    }
+  }
+
 end

@@ -3,8 +3,20 @@
     <legend>Edit Portfolio Project</legend>
     <%= form_for :project, url: project_path(@project), html: { multipart: true }, method: :patch do |f| %>
       <div class="form-group">
-        <%= f.label "Upload Portfolio Image", class: "control-label" %>
+        <%= f.label "Edit Portfolio Image", class: "control-label" %>
         <%= f.file_field :portfolio_image %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Edit Slider Image One", class: "control-label" %>
+        <%= f.file_field :image_one %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Edit Slider Image Two", class: "control-label" %>
+        <%= f.file_field :image_two %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Edit Slider Image Three", class: "control-label" %>
+        <%= f.file_field :image_three %>
       </div>
       <div class="form-group">
         <%= f.label :title, class: "control-label" %>
