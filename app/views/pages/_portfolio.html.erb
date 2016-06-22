@@ -1,7 +1,7 @@
 <!--our work section start here-->
 <section id="work" class="padding-80">
 
-    <div class="work-section-1">
+    <div class="work-section-1" id="portfolio-anchor">
         <div class="container">
             <div class="section-heading text-center">
                 <h4 class="small section-title"><span>Latest portfolio</span></h4>
@@ -20,7 +20,7 @@
                 <div class="portfolio-box iso-call work-col-4">
                   <% @projects.each do |project| %>
                     <div class="project-post photography branding">
-                      <%= link_to project_path(project), :"data-no-turbolink" => true do %>
+                      <%= link_to project_path(project) do %>
                           <div class="image-wrapper">
                             <%= image_tag project.portfolio_image.url(:medium), class:"img-responsive" %>
                             <div class="image-overlay">

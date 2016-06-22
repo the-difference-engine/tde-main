@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+
 //= require theme/moderniz.min
 //= require theme/jquery-migrate.min
 //= require theme/jquery.easing.1.3.min
