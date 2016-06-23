@@ -13,11 +13,11 @@
             <div class="navbar-collapse collapse">
 
                 <ul class="nav navbar-nav navbar-right scrollto">
-                    <li><%= link_to "Home", :controller => :pages, :action => :home %></li>
-                    <li><%= link_to "What We Do", :controller => :pages, :action => :home, :anchor => "what-we-do" %></li>
-                    <li><%= link_to "How It Works", :controller => :pages, :action => :home, :anchor => "how-it-works" %></li>
-                    <li><%= link_to "Portfolio", :controller => :pages, :action => :home, :anchor => "portfolio-anchor" %></li>
-                    <li><%= link_to "Contact", :controller => :pages, :action => :home, :anchor => "contact-anchor" %></li>
+                    <li><%= link_to "Home", :controller => '/pages', :action => :home %></li>
+                    <li><%= link_to "What We Do", :controller => '/pages', :action => :home, :anchor => "what-we-do" %></li>
+                    <li><%= link_to "How It Works", :controller => '/pages', :action => :home, :anchor => "how-it-works" %></li>
+                    <li><%= link_to "Portfolio", :controller => '/pages', :action => :home, :anchor => "portfolio-anchor" %></li>
+                    <li><%= link_to "Contact", :controller => '/pages', :action => :home, :anchor => "contact-anchor" %></li>
                     <% if admin_signed_in? %>
                       <li><%= link_to('Log Out', destroy_admin_session_path, :method => :delete) %></li>
                     <% end %>
