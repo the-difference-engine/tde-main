@@ -2,6 +2,18 @@
   <div class="new-project-container">
     <legend>Edit Portfolio Project</legend>
     <%= form_for :project, url: project_path(@project), html: { multipart: true }, method: :patch do |f| %>
+      <% if @project.errors.any? %>
+        <div class="alert alert-dismissible alert-danger">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <h4 class="alert-validation">
+            <%= pluralize(@project.errors.count, "error") %> prohibited
+            this client from being saved:
+          </h4>
+          <% @project.errors.full_messages.each do |msg| %>
+            <p><%= msg %></p>
+          <% end %>
+        </div>
+      <% end %>
       <div class="form-group">
         <%= f.label "Edit Portfolio Image", class: "control-label" %>
         <%= f.file_field :portfolio_image %>

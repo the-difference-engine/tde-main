@@ -7,4 +7,5 @@ class Project < ActiveRecord::Base
   validates_attachment_content_type :image_two, content_type: /\Aimage\/.*\Z/
   has_attached_file :image_three, styles: { medium: "750x450>"}
   validates_attachment_content_type :image_three, content_type: /\Aimage\/.*\Z/
+  validates :title, :description, :portfolio_image, :image_one, presence: true
 end

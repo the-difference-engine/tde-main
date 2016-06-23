@@ -1,6 +1,16 @@
-<h1>Projects</h1>
-<ul>
-<% @projects.each do |project| %>
-  <li><%= project.title %></li>
-  <% end %>
-</ul>
+<div class="container">
+  <table class="table table-striped" id="project-table">
+    <thead>
+      <tr>
+        <th><h3>Portfolio Projects</h3></th>
+      </tr>
+    </thead>
+    <tbody>
+      <%  @projects.each do |project| %>
+        <tr>
+          <td> <%= link_to "#{project.title}", project_path(project) %> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
