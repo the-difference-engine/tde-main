@@ -17,9 +17,9 @@
                 <li><a href="#" data-filter=".web-design">web design</a></li>
             </ul> -->
             <div class="row">
-                <div class="portfolio-box iso-call work-col-4 center-portfolio-div">
+                <div class="portfolio-box iso-call work-col-4">
                   <% @projects.each do |project| %>
-                    <div class="project-post photography branding center-portfolio-img">
+                    <div class="project-post photography branding">
                       <%= link_to project_path(project) do %>
                           <div class="image-wrapper">
                             <%= image_tag project.portfolio_image.url(:medium), class:"img-responsive" %>
