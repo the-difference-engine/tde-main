@@ -119,8 +119,22 @@ textarea#project_description {
   padding: 10px 24px;
 }
 
+.connect-btn {
+  font-size: 20px;
+  padding: 10px 30px;
+}
+
+.tagline-subhead {
+  font-weight: 600 !important;
+  font-size: 18px !important;
+}
+
 @media (min-width:992px) {
   .role {
     font-size: 14px !important;
+  }
+
+  .lead-container {
+    width: 60%;
   }
 }
