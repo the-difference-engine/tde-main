@@ -1,5 +1,6 @@
 class LeadsController < ApplicationController
-
+  invisible_captcha only: [:create], honeypot: :subtitle
+  
   def new
     @lead = Lead.new
   end

@@ -31,6 +31,8 @@ gem "paperclip", "~> 4.2"
 gem "figaro"
 # Devise for Authentication
 gem 'devise'
+# Invisible Captcha to thwart spambots
+gem 'invisible_captcha'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
