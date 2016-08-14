@@ -1,5 +1,29 @@
-<h2>Message from ACHAW Contact form!</h2>
-
-<h3>Name: <%= @contact.name %></h3>
-<h3>Email: <%= @contact.email %></h3>
-<h4>Message: <%= @contact.message %></h4>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <table style="width:90%;font-family:Arial;margin:0 auto;border-collapse:collapse;" cellpadding="20">
+      <thead>
+        <tr>
+          <th style="background-color:#A4A4E8;color:#fff;height:50px;font-size:20px;">The Difference Engine</th>
+        </tr>
+      </thead>
+      <tbody style="background-color:#F9F9F9;">
+        <tr>
+          <td><h3>Someone sent us a message via the Contact Us form.</h3></td>
+        </tr>
+        <tr>
+          <td style="line-height:23px;"><strong>Name:</strong> <%= @contact.name %></td>
+        </tr>
+        <tr>
+          <td><strong>Email:</strong> <%= @contact.email %></td>
+        </tr>
+        <tr>
+          <td><strong>Message:</strong> “<%= @contact.message %>”</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

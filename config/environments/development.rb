@@ -44,13 +44,15 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: 'smtp.mandrillapp.com',
-    port:    587,
-    domain:  'anyonecanhaveawebsite.com',
-    user_name: ENV["MAILER_USERNAME"],
-    password: ENV["MAILER_PASSWORD"]
+    :user_name => ENV["SENDGRID_USERNAME"],
+    :password => ENV["SENDGRID_PASSWORD"],
+    :domain => 'thedifferenceengine.io',
+    :address => 'smtp.sendgrid.net',
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
   }
-
+  
   config.paperclip_defaults = {
     storage: :s3,
     s3_credentials: {
