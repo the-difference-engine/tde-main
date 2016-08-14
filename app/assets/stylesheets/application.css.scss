@@ -101,6 +101,24 @@ textarea#project_description {
   padding-right: 100px;
 }
 
+.lead-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.lead-title {
+  font-weight: 300;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 75px;
+  line-height: 1.2;
+}
+
+.lead-btn {
+  font-size: 16px;
+  padding: 10px 24px;
+}
+
 @media (min-width:992px) {
   .role {
     font-size: 14px !important;
