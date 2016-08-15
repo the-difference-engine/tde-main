@@ -1,6 +1,6 @@
 class LeadsController < ApplicationController
   invisible_captcha only: [:create], honeypot: :subtitle
-  
+
   def new
     @lead = Lead.new
   end
@@ -9,6 +9,7 @@ class LeadsController < ApplicationController
     @lead = Lead.new(lead_params)
 
     if @lead.save
+      LeadMailer.new_lead(@lead).deliver_now
       flash[:notice] = "Thanks for reaching out—we will contact you shortly!"
       redirect_to :root
     else

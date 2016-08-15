@@ -37,6 +37,7 @@
                                     <div class="form-group col-xs-12 controls" id="contact-us-redirect">
                                       <%= f.label :email %>
                                       <%= f.text_field :email, required: true, placeholder: "required", class: "form-control" %>
+                                      <%= f.invisible_captcha :subhead %>
                                         <p class="help-block"></p>
                                     </div>
                                 </div>

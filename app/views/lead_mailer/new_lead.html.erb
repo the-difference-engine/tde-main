@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <table style="width:90%;font-family:Arial;margin:0 auto;border-collapse:collapse;" cellpadding="20">
+      <thead>
+        <tr>
+          <th style="background-color:#A4A4E8;color:#fff;height:50px;font-size:20px;">The Difference Engine</th>
+        </tr>
+      </thead>
+      <tbody style="background-color:#F9F9F9;">
+        <tr>
+          <td><h3>Someone submitted a new Project Lead.</h3></td>
+        </tr>
+        <tr>
+          <td style="line-height:23px;"><strong>Name:</strong> <%= @lead.name %></td>
+        </tr>
+        <tr>
+          <td><strong>Email:</strong> <%= @lead.email %></td>
+        </tr>
+        <tr>
+          <td><strong>Phone:</strong> <%= @lead.phone %></td>
+        </tr>
+        <tr>
+          <td><strong>Company:</strong> <%= @lead.company %></td>
+        </tr>
+        <tr>
+          <td><strong>Compnay Type:</strong> <%= @lead.company_kind %></td>
+        </tr>
+        <tr>
+          <td><strong>Role:</strong> <%= @lead.role %></td>
+        </tr>
+        <tr>
+          <td><strong>Website:</strong> <%= @lead.website %></td>
+        </tr>
+        <tr>
+          <td><strong>How they heard about TDE:</strong> <%= @lead.hear_about_tde %></td>
+        </tr>
+        <tr>
+          <% project_needs = [] %>
+          <% @lead.needs.each do |need| %>
+            <% project_needs << need.name %>
+          <% end %>
+          <td><strong>Dev needs:</strong> <%= project_needs.join(', ') %></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
