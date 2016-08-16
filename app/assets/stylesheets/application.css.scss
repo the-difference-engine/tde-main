@@ -134,12 +134,35 @@ textarea#project_description {
   font-size: 18px !important;
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .role {
     font-size: 14px !important;
   }
 
   .lead-container {
     width: 60%;
+  }
+}
+
+@media (max-width: 414px) {
+  #home.full-screen-dem {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    min-height: 40%;
+    height: 40%;
+  }
+
+  .home-content {
+    vertical-align: top;
+    padding-top: 107px;
+  }
+
+  .main-flex-slider h1 {
+    font-size: 2em;
+  }
+
+  .connect-btn {
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }
