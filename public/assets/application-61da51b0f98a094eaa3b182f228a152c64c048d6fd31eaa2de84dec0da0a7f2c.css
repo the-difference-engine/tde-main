@@ -17454,4 +17454,170 @@ a.outside_link {
 
 
  */
+/* line 29, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.new-project-container {
+  margin: 40px auto;
+  width: 75%;
+}
 
+/* line 34, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+#page-head-bg {
+  padding: 50px 0;
+}
+
+/* line 38, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+#page-head-bg h1 {
+  font-weight: 700;
+}
+
+/* line 42, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+textarea#project_description {
+  height: 200px;
+}
+
+/* line 46, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.slider-image-border {
+  border: 2px solid #fafafa;
+}
+
+/* line 50, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+:target:before {
+  content: "";
+  display: block;
+  height: 90px;
+  margin: -90px 0 0;
+}
+
+/* line 57, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.devise-sign-in-container {
+  margin: 75px auto;
+  max-width: 500px;
+  background-color: #f5f5fd;
+  border-radius: 5px;
+}
+
+/* line 64, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.devise-sign-in-container h2 {
+  text-align: center;
+}
+
+/* line 68, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.devise-sign-in-container input#admin_email, input#admin_password {
+  width: 470px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+/* line 74, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.devise-password-reset-form {
+  margin: 125px auto;
+  max-width: 500px;
+  background-color: #f5f5fd;
+  border-radius: 5px;
+}
+
+/* line 81, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.devise-password-reset-form h2 {
+  text-align: center;
+}
+
+/* line 85, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.devise-password-reset-form input#admin_email, input#admin_password {
+  width: 470px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+/* line 91, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+#project-table {
+  width: 500px;
+  margin: 50px auto 150px auto;
+}
+
+/* line 96, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.alert {
+  padding: 15px 0 15px 50px;
+  margin-bottom: 0;
+}
+
+/* line 101, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.alert-dismissible {
+  padding-right: 100px;
+}
+
+/* line 105, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.lead-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* line 110, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.lead-container input, select {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* line 115, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.lead-title {
+  font-weight: 300;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 75px;
+  line-height: 1.2;
+}
+
+/* line 123, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.lead-btn {
+  font-size: 16px;
+  padding: 10px 24px;
+}
+
+/* line 128, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.connect-btn {
+  font-size: 20px;
+  padding: 10px 30px;
+}
+
+/* line 133, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+.tagline-subhead {
+  font-weight: 600 !important;
+  font-size: 18px !important;
+}
+
+@media (min-width: 992px) {
+  /* line 139, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+  .role {
+    font-size: 14px !important;
+  }
+
+  /* line 143, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+  .lead-container {
+    width: 60%;
+  }
+}
+@media (max-width: 414px) {
+  /* line 149, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+  #home.full-screen-dem {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    min-height: 40%;
+    height: 40%;
+  }
+
+  /* line 156, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+  .home-content {
+    vertical-align: top;
+    padding-top: 107px;
+  }
+
+  /* line 161, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+  .main-flex-slider h1 {
+    font-size: 2em;
+  }
+
+  /* line 165, /Users/klowewilliams/acltc/achaw/app/assets/stylesheets/application.css.scss */
+  .connect-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
