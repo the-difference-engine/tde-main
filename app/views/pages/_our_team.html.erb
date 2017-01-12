@@ -7,6 +7,24 @@
         <h4 class="small section-title"><span>Our Team</span></h4>
         <h2 class="large section-title">San Francisco</h2>
         </div>
+
+        <% @developers.each do |developer| %>
+          <div class="col-sm-4">
+          <div class="person">
+          <%= image_tag @developerpic, class:"img-responsive" %>
+           <div class="person-desc">
+              <h4><%= @first_name %> <%= @last_name %></h4>
+              <em class="role"><%= @title %></em>
+            </div>
+        </div>
+      </div>
+      <% end %>
+
+
+
+
+
+
       <div class="col-sm-4">
         <div class="person">
         <%= image_tag "seth-quittner.jpg", class:"img-responsive" %>

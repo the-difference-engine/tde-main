@@ -19,7 +19,7 @@ class DevelopersController < ApplicationController
   def create
     @developer = Developer.new(developer_params)
       if @developer.save
-        redirect_to @developer, notice: "New Developer Created!"
+        redirect_to root_path, notice: "New Developer Created!"
       else
         render 'new'
       end
