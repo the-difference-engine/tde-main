@@ -11,10 +11,10 @@
         <% @developers.each do |developer| %>
           <div class="col-sm-4">
           <div class="person">
-          <%= image_tag @developerpic, class:"img-responsive" %>
+          <%= image_tag developer.developerpic, class:"img-responsive" %>
            <div class="person-desc">
-              <h4><%= @first_name %> <%= @last_name %></h4>
-              <em class="role"><%= @title %></em>
+              <h4><%= developer.first_name %> <%= developer.last_name %></h4>
+              <em class="role"><%= developer.title %></em>
             </div>
         </div>
       </div>
