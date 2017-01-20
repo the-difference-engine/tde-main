@@ -1,7 +1,7 @@
 <div class="container">
   <div class="new-developer-container">
-    <legend>Create New Developer</legend>
-    <%= form_for @developer, url: developers_path, html: { multipart: true } do |f| %>
+    <legend>Edit Developer Information</legend>
+    <%= form_for :developer, url: developer_path(@developer), html: { multipart: true }, method: :patch do |f| %>
       <% if @developer.errors.any? %>
         <div class="alert alert-dismissible alert-danger">
           <button type="button" class="close" data-dismiss="alert">×</button>
@@ -14,8 +14,8 @@
           <% end %>
         </div>
       <% end %>
-      <div class="form-group">
-        <%= f.label "Upload Image", class: "control-label" %>
+     <div class="form-group">
+        <%= f.label "Edit Image", class: "control-label" %>
         <%= f.file_field :developerpic %>
       </div>
       <div class="form-group">
@@ -30,10 +30,11 @@
         <%= f.label :title, class: "control-label" %>
         <%= f.text_field :title, class: "form-control" %>
       </div>
-      
+     
       <div class="form-group">
-        <%= f.submit "Create developer", class: "btn btn-theme-color btn-lg" %>
+        <%= f.submit "Edit Developer", class: "btn btn-theme-color btn-lg" %>
       </div>
     <% end %>
+    <%= link_to 'Delete developer', developer_path(@developer), method: :delete, data: { confirm: "Are you sure? This will delete this developer FOREVER! (This is not considered murder... don't be too alarmed)" }, class: "btn btn-danger" %>
   </div>
 </div>
