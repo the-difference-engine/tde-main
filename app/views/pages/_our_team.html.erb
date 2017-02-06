@@ -8,6 +8,7 @@
         <!-- <h2 class="large section-title">San Francisco</h2> -->
         </div>
 
+
         <% @developers.each do |developer| %>
           <div class="col-sm-4">
           <div class="person">
@@ -15,6 +16,7 @@
            <div class="person-desc">
               <h4><%= developer.first_name %> <%= developer.last_name %></h4>
               <em class="role"><%= developer.title %></em>
+
             </div>
         </div>
       </div>
