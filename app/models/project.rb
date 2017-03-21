@@ -8,7 +8,4 @@ class Project < ActiveRecord::Base
   has_attached_file :image_three, styles: { medium: "750x450>"}
   validates_attachment_content_type :image_three, content_type: /\Aimage\/.*\Z/
   validates :title, :description, :portfolio_image, :image_one, presence: true
-
-  Paperclip::Attachment.default_options[:url] = ':s3_domain_url'
-  Paperclip::Attachment.default_options[:path] = '/:class/:attachment/:id_partition/:style/:filename'
 end
