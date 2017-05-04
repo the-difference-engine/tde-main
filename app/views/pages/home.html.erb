@@ -32,6 +32,7 @@
                   </ul>
               </div>
               <h2 class="slide-btm-text tagline-subhead">Transforming people and nonprofits through technology</h2>
+
               <div class="btn btn-lg btn-theme-color connect-btn" >
                   <%= link_to "Get Involved", :controller => '/pages', :action => :home, :anchor => "contact-anchor" %>
               </div>
@@ -49,5 +50,17 @@
 <% #render 'price' %>
 
 <%= render 'our_team' %>
+
+<hr>
+<div class="container">
+   <div class="section-heading text-center">
+     <h2 class="large section-title"> Thank you to our Sponsor </h2>
+     <!--  <div class="flexslider"> -->
+            <%= link_to(image_tag("actualize-logo.png", class: "slides", alt: "actualize logo"), "http://www.actualize.co" , target: :_new) %>
+      <!-- </div> -->
+    </div>
+<hr>
+</div>
+
 
 <%= render 'contact' %>
