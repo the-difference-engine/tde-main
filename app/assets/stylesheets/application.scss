@@ -25,6 +25,9 @@
  *= require_self
  */
 
+ //= depend_on_asset "favicon.ico"
+ //= depend_on_asset "actualize-logo.png"
+
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
