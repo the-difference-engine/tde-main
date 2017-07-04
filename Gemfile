@@ -38,6 +38,8 @@ gem 'invisible_captcha'
 gem 'rails_12factor'
 # Font-Awesome for icon support
 gem 'font-awesome-sass', '~> 4.7'
+# Stripe for accepting credit card payments
+gem 'stripe'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
