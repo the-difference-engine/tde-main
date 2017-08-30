@@ -22,6 +22,7 @@
                     <% if admin_signed_in? %>
                       <li><%= link_to('Log Out', destroy_admin_session_path, :method => :delete) %></li>
                     <% end %>
+                    <li><%=link_to "Media Kit", 'https://s3-us-west-2.amazonaws.com/achaw/TDE+Media+Kit.pdf' %>
                     <!-- <li><a href="#">Blog</a></li> -->
 
 
