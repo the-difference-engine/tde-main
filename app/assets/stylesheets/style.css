@@ -12,3 +12,9 @@ a.outside_link {
 h3{
 	color: #FFFFFF;
 }
+
+.sponsor img {
+ 	width: 25%;
+    height: auto;
+    padding: 25px;
+}
