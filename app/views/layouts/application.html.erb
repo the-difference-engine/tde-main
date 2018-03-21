@@ -85,17 +85,17 @@
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
         <script type="text/javascript">
             var myLatlng;
-            var myLatlng2;
-            var myLatlng3;
+            // var myLatlng2;
+            // var myLatlng3;
             var map;
             var marker;
-            var marker2;
-            var marker3;
+            // var marker2;
+            // var marker3;
 
             function initialize() {
                 myLatlng = new google.maps.LatLng(41.892136, -87.634830);
-                myLatlng2 = new google.maps.LatLng(37.787571, -122.404720);
-                myLatlng3 = new google.maps.LatLng(40.709184, -74.010095);
+                // myLatlng2 = new google.maps.LatLng(37.787571, -122.404720);
+                // myLatlng3 = new google.maps.LatLng(40.709184, -74.010095);
 
                 var mapOptions = {
                     zoom: 4,
@@ -112,47 +112,47 @@
                     content: contentString
                 });
 
-                marker = new google.maps.Marker({
-                    position: myLatlng,
-                    map: map,
-                    title: 'Marker'
-                });
+               //  marker = new google.maps.Marker({
+               //      position: myLatlng,
+               //      map: map,
+               //      title: 'Marker'
+               //  });
 
-                 google.maps.event.addListener(marker, 'click', function () {
-                    infowindow.open(map,marker);
-                });
+               //   google.maps.event.addListener(marker, 'click', function () {
+               //      infowindow.open(map,marker);
+               //  });
 
-                var contentString2 = '<h5>The Difference Engine</h5><p>TechSpace, 77 Geary St, San Francisco, CA 94108</p>';
+               //  var contentString2 = '<h5>The Difference Engine</h5><p>TechSpace, 77 Geary St, San Francisco, CA 94108</p>';
 
-                var infowindow2 = new google.maps.InfoWindow({
-                    content: contentString2
-                });
+               //  var infowindow2 = new google.maps.InfoWindow({
+               //      content: contentString2
+               //  });
 
-                marker2 = new google.maps.Marker({
-                    position: myLatlng2,
-                    map: map,
-                    title: 'Marker'
-                });
+               //  marker2 = new google.maps.Marker({
+               //      position: myLatlng2,
+               //      map: map,
+               //      title: 'Marker'
+               //  });
 
-                 google.maps.event.addListener(marker2, 'click', function () {
-                    infowindow2.open(map,marker2);
-                });
+               //   google.maps.event.addListener(marker2, 'click', function () {
+               //      infowindow2.open(map,marker2);
+               //  });
 
-               var contentString3 = '<h5>The Difference Engine</h5><p>LMHQ, 150 Broadway, 20th Floor, New York, NY 10038</p>';
+               // var contentString3 = '<h5>The Difference Engine</h5><p>LMHQ, 150 Broadway, 20th Floor, New York, NY 10038</p>';
 
-                var infowindow3 = new google.maps.InfoWindow({
-                    content: contentString3
-                });
+               //  var infowindow3 = new google.maps.InfoWindow({
+               //      content: contentString3
+               //  });
 
-                marker3 = new google.maps.Marker({
-                    position: myLatlng3,
-                    map: map,
-                    title: 'Marker'
-                });
+               //  marker3 = new google.maps.Marker({
+               //      position: myLatlng3,
+               //      map: map,
+               //      title: 'Marker'
+               //  });
 
-                google.maps.event.addListener(marker3, 'click', function () {
-                    infowindow3.open(map,marker3);
-                });
+               //  google.maps.event.addListener(marker3, 'click', function () {
+               //      infowindow3.open(map,marker3);
+               //  });
 
                 var styles = [
                   {
