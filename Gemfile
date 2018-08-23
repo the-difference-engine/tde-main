@@ -46,6 +46,8 @@ gem 'stripe'
 gem 'sendgrid-ruby'
 # Puma server for web process
 gem 'puma'
+# Manually controlling bundler version
+gem 'bundler', '~> 1.16.4'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
