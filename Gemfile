@@ -44,7 +44,8 @@ gem 'font-awesome-sass', '~> 4.7'
 gem 'stripe'
 # SendGrid for email automation
 gem 'sendgrid-ruby'
-
+# Puma server for web process
+gem 'puma'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
