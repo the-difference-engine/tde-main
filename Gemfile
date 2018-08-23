@@ -42,6 +42,8 @@ gem 'rails_12factor'
 gem 'font-awesome-sass', '~> 4.7'
 # Stripe for accepting credit card payments
 gem 'stripe'
+# SendGrid for email automation
+gem 'sendgrid-ruby'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

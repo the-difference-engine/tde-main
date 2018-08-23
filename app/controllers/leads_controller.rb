@@ -10,7 +10,7 @@ class LeadsController < ApplicationController
 
     if @lead.save
       LeadMailer.new_lead(@lead).deliver_now
-      flash[:notice] = "Thanks for reaching out—we will contact you shortly!"
+      flash[:notice] = "Thanks for reaching out, we will be in contact"
       redirect_to :root
     else
       render 'new'
