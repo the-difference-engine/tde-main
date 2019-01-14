@@ -1,5 +1,15 @@
 <div class="container lead-container">
   <h2 class="lead-title animated fadeInDown animated">We'd love to learn about your organization and discuss your development needs.</h2>
+  <h6 class="fadeInDown animated">Here are some preliminary requirements to be eligible for a pro bono website or web application:</h6>
+        <li class="fadeInDown animated">No to low revenue nonprofit or social enterprise (less than $50,000 annual gross revenue)</li>
+        <li class="fadeInDown animated">Company mission clearly shows how revenue is reinvested into the community</li> 
+        <li class="fadeInDown animated">Existing business/organization (must be past concept phase of business development)</li>
+        <li class="fadeInDown animated">Open timeframe for project completion (current turnaround is 9 months)</li>
+      <li class="fadeInDown animated">Greenfield projects only - brand new, we do not update existing websites but create new ones</li>
+      <li class="fadeInDown animated">Agree to be be part of the process and available for onsite (or web) conferences every 2-3 weeks</li>
+      <li class="fadeInDown animated">Organization is not affiliated with a political initiative, church or religious entity</li>
+      <h6 class="fadeInUp animated"><center>Please note: We are currently not able to build mobile apps</center></h6>
+<br>
   <%= form_for(@lead) do |f| %>
     <% if @lead.errors.any? %>
       <div class="alert alert-dismissible alert-danger">
@@ -8,7 +18,7 @@
           <%= pluralize(@lead.errors.count, "error") %> prevented your information
           from being sent:
         </h4>
-        <% @lead.errors.full_messages.each do |msg| %>
+        <% @lead.errors.flil_messages.each do |msg| %>
           <p><%= msg %></p>
         <% end %>
       </div>
