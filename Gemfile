@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '>= 5.0.0.rc2', '< 5.1'
 # Ruby version
-ruby '2.3.7'
+ruby '2.5.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '0.18.3'
 # Use SCSS for stylesheets
@@ -50,6 +50,8 @@ gem 'puma'
 gem 'bundler'
 # Use Unicorn as the app server
 # gem 'unicorn'
+
+gem 'railties', '< 5.1' , '> 4.0.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
