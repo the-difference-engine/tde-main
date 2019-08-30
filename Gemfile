@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #AWS SDK
 gem 'aws-sdk', '< 2.0'
 #Paperclip
-gem "paperclip", "~> 4.2"
+gem "paperclip", ">= 5.2.0"
 # Figaro for storing sensitive info
 gem "figaro"
 # Devise for Authentication
