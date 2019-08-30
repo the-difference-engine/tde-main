@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 #AWS SDK
 gem 'aws-sdk-rails'
-gem 'aws-sdk', '< 2.0'
+gem 'aws-sdk'
 #Paperclip
 gem "paperclip", ">= 5.2.0"
 # Figaro for storing sensitive info
