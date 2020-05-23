@@ -70,8 +70,13 @@
         </div>
         <% end %>
           <%= yield :top_video %>
-
-        <%= render 'shared/nav' %>
+        
+        <% if admin_signed_in? %>
+          <%= render 'shared/admin-nav' %>
+        <% else %>
+          <%= render 'shared/nav' %>
+        <% end %>
+        
         <%= yield %>
 
         <%= render 'shared/footer' %>
