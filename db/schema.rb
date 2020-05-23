@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -29,10 +28,9 @@ ActiveRecord::Schema.define(version: 20161128212833) do
     t.inet     "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.index ["email"], name: "index_admins_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
   end
-
-  add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
-  add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
 
   create_table "contacts", force: :cascade do |t|
     t.string   "name"
@@ -50,7 +48,7 @@ ActiveRecord::Schema.define(version: 20161128212833) do
     t.datetime "updated_at",                null: false
     t.string   "developerpic_file_name"
     t.string   "developerpic_content_type"
-    t.integer  "developerpic_file_size"
+    t.bigint   "developerpic_file_size"
     t.datetime "developerpic_updated_at"
   end
 
@@ -85,19 +83,19 @@ ActiveRecord::Schema.define(version: 20161128212833) do
     t.datetime "updated_at",                   null: false
     t.string   "portfolio_image_file_name"
     t.string   "portfolio_image_content_type"
-    t.integer  "portfolio_image_file_size"
+    t.bigint   "portfolio_image_file_size"
     t.datetime "portfolio_image_updated_at"
     t.string   "image_one_file_name"
     t.string   "image_one_content_type"
-    t.integer  "image_one_file_size"
+    t.bigint   "image_one_file_size"
     t.datetime "image_one_updated_at"
     t.string   "image_two_file_name"
     t.string   "image_two_content_type"
-    t.integer  "image_two_file_size"
+    t.bigint   "image_two_file_size"
     t.datetime "image_two_updated_at"
     t.string   "image_three_file_name"
     t.string   "image_three_content_type"
-    t.integer  "image_three_file_size"
+    t.bigint   "image_three_file_size"
     t.datetime "image_three_updated_at"
   end
 
