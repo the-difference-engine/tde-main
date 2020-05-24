@@ -16,6 +16,9 @@
                     <li><%= link_to "Landing Page", :controller => '/pages', :action => :home %></li>
                     <li><%= link_to "Projects", :controller => '/projects', :action => :index %></li>
                     <li><%= link_to "Developers", :controller => '/developers', :action => :index %></li>
+                    <% if current_admin.super_admin == true %>
+                       <li><%= link_to "Admins", :controller => '/admins', :action => :index %></li>
+                    <% end %>
                     <li><%= link_to('Log Out', destroy_admin_session_path, :method => :delete) %></li>
                     <li><%=link_to "Media Kit", 'https://s3-us-west-2.amazonaws.com/achaw/TDE+Media+Kit.pdf' %>
                     <!-- <li><a href="#">Blog</a></li> -->
