@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="new-form-container">
+    <legend>Create Admin</legend>
+    <%= form_for @admin, url: admins_path, html: { multipart: true } do |f| %>
+      <% if @admin.errors.any? %>
+        <div class="alert alert-dismissible alert-danger">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <h4 class="alert-validation">
+            <%= pluralize(@admin.errors.count, "error") %> prohibited
+            this from being saved:
+          </h4>
+          <% @admin.errors.full_messages.each do |msg| %>
+            <p><%= msg %></p>
+          <% end %>
+        </div>
+      <% end %>
+
+      <div class="form-group">
+        <%= f.label :first_name, class: "control-label" %>
+        <%= f.text_field :first_name, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :last_name, class: "control-label" %>
+        <%= f.text_field :last_name, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :email, class: "control-label" %>
+        <%= f.text_field :email, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :password, class: "control-label" %>
+        <p>(Temporary)</p>
+        <%= f.password_field :password, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :super_admin, class: "control-label" %>
+        <%= f.check_box :super_admin, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit "Create Admin", class: "btn btn-theme-color btn-lg" %>
+      </div>
+    <% end %>
+  </div>
+</div>

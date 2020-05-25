@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="new-project-container">
+  <div class="new-form-container">
     <legend>Create Portfolio Project</legend>
     <%= form_for @project, url: projects_path, html: { multipart: true } do |f| %>
       <% if @project.errors.any? %>
