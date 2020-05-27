@@ -1,0 +1,18 @@
+<div class="container">
+  <table class="table idx-table">
+    <thead>
+      <tr>
+        <th><h2>All Developers</h2></th>
+        <th><%= link_to "New Developer", new_developer_path, class: "btn btn-info btn-md" %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <%  @developers.each do |developer| %>
+        <tr>
+          <td> <%= link_to "#{developer.first_name} #{developer.last_name}", developer_path(developer) %> </td>
+          <td> <%= link_to "Edit", edit_developer_path(developer), class: "btn btn-warning btn-sm" %> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

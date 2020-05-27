@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="new-developer-container">
+  <div class="new-form-container">
     <legend>Edit Developer Information</legend>
     <%= form_for :developer, url: developer_path(@developer), html: { multipart: true }, method: :patch do |f| %>
       <% if @developer.errors.any? %>
@@ -20,11 +20,11 @@
       </div>
       <div class="form-group">
         <%= f.label :first_name, class: "control-label" %>
-        <%= f.text_area :first_name, class: "form-control" %>
+        <%= f.text_field :first_name, class: "form-control" %>
       </div>
        <div class="form-group">
         <%= f.label :last_name, class: "control-label" %>
-        <%= f.text_area :last_name, class: "form-control" %>
+        <%= f.text_field :last_name, class: "form-control" %>
       </div>
       <div class="form-group">
         <%= f.label :title, class: "control-label" %>
@@ -32,7 +32,7 @@
       </div>
      
       <div class="form-group">
-        <%= f.submit "Edit Developer", class: "btn btn-theme-color btn-lg" %>
+        <%= f.submit "Update Developer", class: "btn btn-theme-color btn-lg" %>
       </div>
     <% end %>
     <%= link_to 'Delete developer', developer_path(@developer), method: :delete, data: { confirm: "Are you sure? This will delete this developer FOREVER! (This is not considered murder... don't be too alarmed)" }, class: "btn btn-danger" %>

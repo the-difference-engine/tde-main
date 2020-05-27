@@ -39,7 +39,7 @@
         <%= f.text_area :description, class: "form-control" %>
       </div>
       <div class="form-group">
-        <%= f.submit "Edit Project", class: "btn btn-theme-color btn-lg" %>
+        <%= f.submit "Update Project", class: "btn btn-theme-color btn-lg" %>
       </div>
     <% end %>
     <%= link_to 'Delete Project', project_path(@project), method: :delete, data: { confirm: 'Are you sure? This will delete the project FOREVER!' }, class: "btn btn-danger" %>
