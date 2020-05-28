@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :admins
+  resources :admins
   root 'pages#home'
   resources :contacts
   resources :projects

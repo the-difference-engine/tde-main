@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="new-form-container">
+    <legend>Edit Admin</legend>
+    <%= form_for :admin, url: admin_path(@admin), html: { multipart: true }, method: :patch do |f| %>
+      <% if @admin.errors.any? %>
+        <div class="alert alert-dismissible alert-danger">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <h4 class="alert-validation">
+            <%= pluralize(@admin.errors.count, "error") %> prohibited
+            this admin from being saved:
+          </h4>
+          <% @admin.errors.full_messages.each do |msg| %>
+            <p><%= msg %></p>
+          <% end %>
+        </div>
+      <% end %>
+      
+      <div class="form-group">
+        <%= f.label :first_name, class: "control-label" %>
+        <%= f.text_field :first_name, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :last_name, class: "control-label" %>
+        <%= f.text_field :last_name, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :email, class: "control-label" %>
+        <%= f.text_field :email, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :super_admin, class: "control-label" %>
+        <%= f.check_box :super_admin, class: "form-control" %>
+      </div>
+      
+      <div class="form-group">
+        <%= f.submit "Update Admin", class: "btn btn-theme-color btn-lg" %>
+      </div>
+    <% end %>
+    <%= link_to 'Delete Admin', admin_path(@admin), method: :delete, data: { confirm: 'Are you sure? This will delete the admin FOREVER!' }, class: "btn btn-danger" %>
+  </div>
+</div>
