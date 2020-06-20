@@ -19,14 +19,23 @@
                     <li><%= link_to "Portfolio", :controller => '/pages', :action => :home, :anchor => "portfolio-anchor" %></li>
                     <li><%= link_to "Team", :controller => '/pages', :action => :home, :anchor => "team-anchor" %></li>
                     <li><%= link_to "Volunteer", :controller => '/volunteers' %>
+                    <li><%= link_to "Partner with us", :controller => '/partnerships' %>
                     <li><%= link_to "Submit Project Request", :controller => '/leads', :action => :new %></li>
-                    <% if admin_signed_in? %>
-                      <li><%= link_to('Log Out', destroy_admin_session_path, :method => :delete) %></li>
-                    <% end %>
                     <li><%=link_to "Media Kit", 'https://s3-us-west-2.amazonaws.com/achaw/TDE+Media+Kit.pdf' %>
+                    <!--<li class="dropdown dd-menu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Join us <span class="caret"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul>
+                            <li><%= link_to "Volunteer", :controller => '/volunteers' %>
+                            <li><%= link_to "Partner with us", :controller => '/partnerships' %>
+                            <li><%= link_to "Submit Project Request", :controller => '/leads', :action => :new %></li>
+                            </ul>
+                        </div>
+                    </li>-->
+                    
                     <!-- <li><a href="#">Blog</a></li> -->
-
-
                 </ul>
 
             </div><!--/.nav-collapse -->
