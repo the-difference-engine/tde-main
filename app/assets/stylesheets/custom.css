@@ -1,0 +1,15 @@
+/*Partnerships*/
+.partnerships {
+  color: #a4a4e8;
+}
+
+.partnerships-container  {
+  display: flex;
+  align-items: center;
+}
+
+.p-title {
+  color: #a4a4e8;
+  font-weight: 400;
+  font-size: 20px;
+}
