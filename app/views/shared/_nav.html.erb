@@ -18,23 +18,24 @@
                     <li><%= link_to "How It Works", :controller => '/pages', :action => :home, :anchor => "how-it-works" %></li>
                     <li><%= link_to "Portfolio", :controller => '/pages', :action => :home, :anchor => "portfolio-anchor" %></li>
                     <li><%= link_to "Team", :controller => '/pages', :action => :home, :anchor => "team-anchor" %></li>
-                    <li><%= link_to "Volunteer", :controller => '/volunteers' %>
-                    <li><%= link_to "Partner with us", :controller => '/partnerships' %>
-                    <li><%= link_to "Submit Project Request", :controller => '/leads', :action => :new %></li>
-                    <li><%=link_to "Media Kit", 'https://s3-us-west-2.amazonaws.com/achaw/TDE+Media+Kit.pdf' %>
-                    <!--<li class="dropdown dd-menu">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Join us <span class="caret"></span>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <ul>
-                            <li><%= link_to "Volunteer", :controller => '/volunteers' %>
-                            <li><%= link_to "Partner with us", :controller => '/partnerships' %>
-                            <li><%= link_to "Submit Project Request", :controller => '/leads', :action => :new %></li>
-                            </ul>
-                        </div>
-                    </li>-->
-                    
+                    <li><%=link_to "Media Kit", 'https://s3-us-west-2.amazonaws.com/achaw/TDE+Media+Kit.pdf' %></li>
+                    <div class="join-links-mobile nav navbar-nav" style="padding-left: 15px;">
+                        <li><%= link_to "Volunteer", :controller => '/volunteers' %></li>
+                        <li><%= link_to "Partner with us", :controller => '/partnerships' %></li>
+                        <li><%= link_to "Submit Project Request", :controller => '/leads', :action => :new %></li>
+                    </div>
+                        <li class="dropdown join-links-lg nav navbar-nav">
+                            <a class="nav-link dropdown-toggle join-links-lg" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Join TDE <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="color: #000; text-transform: uppercase; font-size: 12px; font-weight: 400; font-family: 'Quicksand', sans-serif;background-color: white;">
+                                <ul style="list-style:none;">
+                                <li><%= link_to "Volunteer", :controller => '/volunteers' %></li>
+                                <li><%= link_to "Partner with us", :controller => '/partnerships' %></li>
+                                <li><%= link_to "Submit Project Request", :controller => '/leads', :action => :new %></li>
+                                </ul>
+                            </div>
+                        </li>
                     <!-- <li><a href="#">Blog</a></li> -->
                 </ul>
 
