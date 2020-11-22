@@ -10,18 +10,19 @@
       </div>
 
 <!-- NEW SECTION -->
+        <div class="dev-section">
         <% @developers.each do |developer| %>
-          <div class="col-sm-4">
-          <div class="person">
-          <%= image_tag developer.developerpic.url(:medium), class:"img-responsive" %>
-           <div class="person-desc">
+          <div class="dev-card">
+            <div class="img-container">
+              <%= image_tag developer.developerpic.url(:medium), class:"img-responsive" %>
+            </div>
+            <div class="person-desc">
               <h4><%= developer.first_name %> <%= developer.last_name %></h4>
               <em class="role"><%= developer.title %></em>
-
             </div>
-        </div>
+          </div>
+        <% end %>
       </div>
-      <% end %>
     </div>
   </div>
 </div>
