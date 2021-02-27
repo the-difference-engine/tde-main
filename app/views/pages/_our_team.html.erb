@@ -14,7 +14,8 @@
         <% @developers.each do |developer| %>
           <div class="dev-card">
             <div class="img-container">
-              <%= image_tag developer.developerpic.url(:medium), class:"img-responsive" %>
+              <%# <%= image_tag developer.developerpic.url(:medium), class:"img-responsive" %>  %>
+              <%# <img src="<%= developer.developerpic.url %>" /> %>
             </div>
             <div class="person-desc">
               <h4><%= developer.first_name %> <%= developer.last_name %></h4>
