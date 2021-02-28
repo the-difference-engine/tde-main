@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '>= 6.0.0'
+gem 'rails', '>= 5.0.0.rc2'
 # Ruby version
 ruby '3.0.0'
 # Use postgresql as the database for Active Record
@@ -29,7 +29,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'aws-sdk-rails'
 gem 'aws-sdk'
 #Paperclip
-gem "paperclip", ">= 5.2.0"
+gem "paperclip", "~> 5.2.0"
+gem 'addressable', '~> 2.7'
 # Figaro for storing sensitive info
 gem "figaro"
 # Devise for Authentication
