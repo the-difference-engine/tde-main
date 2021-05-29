@@ -48,6 +48,8 @@ gem 'stripe'
 gem 'sendgrid-ruby'
 # Puma server for web process
 gem 'puma'
+
+gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 # Manually controlling bundler version
 gem 'bundler'
 # Use Unicorn as the app server
