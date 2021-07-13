@@ -30,7 +30,7 @@ gem 'aws-sdk-rails'
 gem 'aws-sdk'
 #Paperclip
 gem "paperclip", "~> 5.2.0"
-gem 'addressable', '~> 2.7'
+gem 'addressable', '~> 2.8'
 # Figaro for storing sensitive info
 gem "figaro"
 # Devise for Authentication
